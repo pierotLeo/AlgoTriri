@@ -1,31 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.0.1" sequence="0" timestamp="1449495327384" analysisTimestamp="1449495327431" release="">
+<BugCollection version="3.0.1" sequence="0" timestamp="1449499851386" analysisTimestamp="1449499851412" release="">
   <Project projectName="">
+    <Jar>/home/usager/11403610/RMC3/AlgoTriri/build/classes/main/org/Tri.class</Jar>
     <Jar>/home/usager/11403610/RMC3/AlgoTriri/build/classes/main/org/ArraysTri.class</Jar>
     <Jar>/home/usager/11403610/RMC3/AlgoTriri/build/classes/main/org/Arrays.class</Jar>
+    <SrcDir>/home/usager/11403610/RMC3/AlgoTriri/src/main/java/org/Tri.java</SrcDir>
     <SrcDir>/home/usager/11403610/RMC3/AlgoTriri/src/main/java/org/Arrays.java</SrcDir>
-    <SrcDir>/home/usager/11403610/RMC3/AlgoTriri/src/main/java/org/ArraysTri.java</SrcDir>
   </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="org.Tri">
+      <SourceLine classname="org.Tri" start="5" end="126" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Class>
+    <Field classname="org.Tri" name="i" signature="I" isStatic="true">
+      <SourceLine classname="org.Tri" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Field>
+    <SourceLine classname="org.Tri" start="10" end="10" startBytecode="9" endBytecode="9" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="org.Tri">
+      <SourceLine classname="org.Tri" start="5" end="126" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Class>
+    <Field classname="org.Tri" name="j" signature="I" isStatic="true">
+      <SourceLine classname="org.Tri" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Field>
+    <SourceLine classname="org.Tri" start="11" end="11" startBytecode="13" endBytecode="13" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="org.Tri">
+      <SourceLine classname="org.Tri" start="5" end="126" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Class>
+    <Field classname="org.Tri" name="t" signature="I" isStatic="true">
+      <SourceLine classname="org.Tri" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Field>
+    <SourceLine classname="org.Tri" start="12" end="12" startBytecode="17" endBytecode="17" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="org.Tri">
+      <SourceLine classname="org.Tri" start="5" end="126" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Class>
+    <Field classname="org.Tri" name="tabCpt" signature="I" isStatic="true">
+      <SourceLine classname="org.Tri" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Field>
+    <SourceLine classname="org.Tri" start="5" end="5" startBytecode="1" endBytecode="1" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="3" rank="20" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="org.Tri">
+      <SourceLine classname="org.Tri" start="5" end="126" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Class>
+    <Field classname="org.Tri" name="tmp" signature="I" isStatic="true">
+      <SourceLine classname="org.Tri" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Field>
+    <SourceLine classname="org.Tri" start="6" end="6" startBytecode="5" endBytecode="5" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="org.Tri">
+      <SourceLine classname="org.Tri" start="5" end="126" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Class>
+    <Field classname="org.Tri" name="resCharIntTmp" signature="C" isStatic="true">
+      <SourceLine classname="org.Tri" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="org.Tri">
+      <SourceLine classname="org.Tri" start="5" end="126" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Class>
+    <Field classname="org.Tri" name="resCharTmp" signature="C" isStatic="true">
+      <SourceLine classname="org.Tri" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="org.Tri">
+      <SourceLine classname="org.Tri" start="5" end="126" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Class>
+    <Field classname="org.Tri" name="resNumTmp" signature="I" isStatic="true">
+      <SourceLine classname="org.Tri" sourcefile="Tri.java" sourcepath="org/Tri.java"/>
+    </Field>
+  </BugInstance>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Mon, 7 Dec 2015 14:35:27 +0100" total_classes="2" referenced_classes="10" total_bugs="0" total_size="23" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="2.84" clock_seconds="1.50" peak_mbytes="94.43" alloc_mbytes="878.25" gc_seconds="0.04">
-    <PackageStats package="org" total_bugs="0" total_types="2" total_size="23">
+  <FindBugsSummary timestamp="Mon, 7 Dec 2015 15:50:51 +0100" total_classes="3" referenced_classes="12" total_bugs="8" total_size="84" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="3.48" clock_seconds="1.85" peak_mbytes="100.18" alloc_mbytes="878.25" gc_seconds="0.06" priority_3="5" priority_2="3">
+    <PackageStats package="org" total_bugs="8" total_types="3" total_size="84" priority_3="5" priority_2="3">
       <ClassStats class="org.Arrays" sourceFile="Arrays.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="org.ArraysTri" sourceFile="ArraysTri.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.Tri" sourceFile="Tri.java" interface="false" size="61" bugs="8" priority_3="5" priority_2="3"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="301" invocations="289" avgMicrosecondsPerInvocation="1042" maxMicrosecondsPerInvocation="37852" standardDeviationMircosecondsPerInvocation="2864"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="75" invocations="10" avgMicrosecondsPerInvocation="7549" maxMicrosecondsPerInvocation="36410" standardDeviationMircosecondsPerInvocation="13001"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="64" invocations="257" avgMicrosecondsPerInvocation="249" maxMicrosecondsPerInvocation="5477" standardDeviationMircosecondsPerInvocation="618"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="49" invocations="40" avgMicrosecondsPerInvocation="1234" maxMicrosecondsPerInvocation="6589" standardDeviationMircosecondsPerInvocation="1420"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="45" invocations="10" avgMicrosecondsPerInvocation="4576" maxMicrosecondsPerInvocation="24679" standardDeviationMircosecondsPerInvocation="7839"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="44" invocations="5" avgMicrosecondsPerInvocation="8885" maxMicrosecondsPerInvocation="42827" standardDeviationMircosecondsPerInvocation="16973"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="37" invocations="22" avgMicrosecondsPerInvocation="1708" maxMicrosecondsPerInvocation="19987" standardDeviationMircosecondsPerInvocation="4421"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="30" invocations="290" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="8137" standardDeviationMircosecondsPerInvocation="484"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="28" invocations="10" avgMicrosecondsPerInvocation="2830" maxMicrosecondsPerInvocation="15272" standardDeviationMircosecondsPerInvocation="4880"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="22" invocations="10" avgMicrosecondsPerInvocation="2249" maxMicrosecondsPerInvocation="11579" standardDeviationMircosecondsPerInvocation="4178"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="21" invocations="10" avgMicrosecondsPerInvocation="2130" maxMicrosecondsPerInvocation="13137" standardDeviationMircosecondsPerInvocation="3971"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="21" invocations="5" avgMicrosecondsPerInvocation="4220" maxMicrosecondsPerInvocation="12649" standardDeviationMircosecondsPerInvocation="4436"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="364" invocations="310" avgMicrosecondsPerInvocation="1176" maxMicrosecondsPerInvocation="31849" standardDeviationMircosecondsPerInvocation="3146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="90" invocations="277" avgMicrosecondsPerInvocation="326" maxMicrosecondsPerInvocation="9853" standardDeviationMircosecondsPerInvocation="1061"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="90" invocations="12" avgMicrosecondsPerInvocation="7504" maxMicrosecondsPerInvocation="31937" standardDeviationMircosecondsPerInvocation="10243"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="75" invocations="74" avgMicrosecondsPerInvocation="1021" maxMicrosecondsPerInvocation="8389" standardDeviationMircosecondsPerInvocation="1572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="50" invocations="11" avgMicrosecondsPerInvocation="4569" maxMicrosecondsPerInvocation="47056" standardDeviationMircosecondsPerInvocation="13438"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="48" invocations="25" avgMicrosecondsPerInvocation="1934" maxMicrosecondsPerInvocation="21738" standardDeviationMircosecondsPerInvocation="4523"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="44" invocations="311" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="7996" standardDeviationMircosecondsPerInvocation="588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="42" invocations="12" avgMicrosecondsPerInvocation="3544" maxMicrosecondsPerInvocation="12619" standardDeviationMircosecondsPerInvocation="5025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="41" invocations="12" avgMicrosecondsPerInvocation="3475" maxMicrosecondsPerInvocation="24135" standardDeviationMircosecondsPerInvocation="6649"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="41" invocations="11" avgMicrosecondsPerInvocation="3760" maxMicrosecondsPerInvocation="15163" standardDeviationMircosecondsPerInvocation="4374"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="32" invocations="11" avgMicrosecondsPerInvocation="2976" maxMicrosecondsPerInvocation="11026" standardDeviationMircosecondsPerInvocation="3695"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="29" invocations="11" avgMicrosecondsPerInvocation="2700" maxMicrosecondsPerInvocation="11687" standardDeviationMircosecondsPerInvocation="3396"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="26" invocations="11" avgMicrosecondsPerInvocation="2429" maxMicrosecondsPerInvocation="15164" standardDeviationMircosecondsPerInvocation="4105"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="25" invocations="12" avgMicrosecondsPerInvocation="2154" maxMicrosecondsPerInvocation="9319" standardDeviationMircosecondsPerInvocation="3377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="23" invocations="11" avgMicrosecondsPerInvocation="2144" maxMicrosecondsPerInvocation="13128" standardDeviationMircosecondsPerInvocation="3603"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

@@ -1,5 +1,8 @@
-import static org.junit.Assert.*
-import junit.framework.Assert;
+package org;
+
+import static org.junit.Assert.*;
+import junit.framework.TestCase;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,35 +10,39 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result; 
 import org.junit.runner.notification.Failure; 
 
-public class TriTest extends TestCase 
+public class TriTest 
 {	
 	
+	@Test
 	public void canConvertIntTabToCharTab()
 	{
 		int tabInt[]={1,2,1,3,5,4,2,6,7};
-		char expected_tabConvertedInt[]={'1','2','1','3','5','4','2','6','7'};
-		assertArrayEquals(expected_tabConvertedInt,convertIntToChar(tabInt));
+		String expected_tabConvertedInt[]={"1","2","1","3","5","4","2","6","7"};
+		assertArrayEquals(expected_tabConvertedInt,Tri.convertIntToChar(tabInt));
 	}
 	
+	@Test
 	public void canSortATableOfNum() 
 	{
 		int tabInt[]={1,2,1,3,5,4,2,6,7};
 		int expected_tabInt[]={1,1,2,2,3,4,5,6,7};
-		assertArrayEquals(expected_tabInt,tabNumSort(tabInt));
+		assertArrayEquals(expected_tabInt,Tri.tabNumSort(tabInt));
 	}
 	
+	@Test
 	public void canSortATableOfChar() 
 	{
 		char tabChar[]={'a','r','t','z','s','c'};
 		char expected_tabChar[]={'a','c','r','s','t','z'};
-		assertArrayEquals(expected_tabChar,tabCharSort(tabChar));
+		assertArrayEquals(expected_tabChar,Tri.tabCharSort(tabChar));
 	}
 	
+	@Test
 	public void canSortSpecialChar()
 	{
 		char tabSpecialChar[]={'r','a','@','c','$','z','s','%','t','*'};
 		char expected_tabChar[]={'$','%','*','@','a','c','r','s','t','z'};
-		assertArrayEquals(expected_tabChar,tabSpecialChar(tabSpecialChar));
+		assertArrayEquals(expected_tabChar,Tri.tabSpecialChar(tabSpecialChar));
 	}
 	
 	/*public static void main(String[] args)
@@ -68,7 +75,7 @@ public class TriTest extends TestCase
 
 		for(int val:newIntTabSorted)
 		{
-			System.out.println("Valeur n°"+i+" = "+val);
+			System.out.println("Valeur nï¿½"+i+" = "+val);
 			i++;
 		}	
 		
@@ -88,7 +95,7 @@ public class TriTest extends TestCase
 		
 		for(char val:newCharFromIntTabSorted)
 		{
-			System.out.println("Valeur n°"+i+" = "+val);
+			System.out.println("Valeur nï¿½"+i+" = "+val);
 			i++;
 		}
 		
@@ -106,6 +113,6 @@ public class TriTest extends TestCase
 
 		for(char val:newCharTabSorted)
 		{
-			System.out.println("Valeur n°"+i+" = "+val);
+			System.out.println("Valeur nï¿½"+i+" = "+val);
 			i++;
 		}	*/

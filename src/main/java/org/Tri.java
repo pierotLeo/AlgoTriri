@@ -1,3 +1,5 @@
+package org;
+
 public class Tri {
 	
 	private static int tabCpt=0;
@@ -12,94 +14,66 @@ public class Tri {
 	public Tri(){}
 	
 	@SuppressWarnings("null")
-	public static char[] convertIntToChar(int[] tabIntToSort)
+	public static String[] convertIntToChar(int[] tabIntToSort)
 	{
-		char tabCharConverted[] = null;
+		String tabCharConverted[] = new String[tabIntToSort.length];
 		
 		for(int i=0;i<tabIntToSort.length;i++)
-			tabCharConverted[i]=(char)tabIntToSort[i];
+			tabCharConverted[i]=Integer.toString(tabIntToSort[i]);
 				
 		return tabCharConverted;
 	}
 	
 	public static int[] tabNumSort(int[] tabNumToSort)
 	{
-		try
+		boolean tab_en_ordre = false;
+		int taille = tabNumToSort.length;
+		while(!tab_en_ordre)
 		{
-			for(;tabCpt<tabNumToSort.length;tabCpt++)
+			tab_en_ordre = true;
+			for(int i=0 ; i < taille-1 ; i++)
 			{
-				if(tabCpt!=0 && (tabCpt<(tabNumToSort.length)))
-				{	
-					while(tabNumToSort[tabCpt-i]<tabNumToSort[tabCpt-tmp])
-					{
-						resNumTmp=tabNumToSort[tabCpt-tmp];
-						tabNumToSort[tabCpt-tmp]=tabNumToSort[tabCpt-i];
-						tabNumToSort[tabCpt-i]=resNumTmp;
-						tmp++;
-						i++;
-					}
-					
-					i=0;
-					tmp=1;
+				if(tabNumToSort[i] > tabNumToSort[i+1])
+				{
+					int tmp = tabNumToSort[i];
+					tabNumToSort[i] = tabNumToSort[i+1];
+					tabNumToSort[i+1] = tmp;
+					tab_en_ordre = false;
 				}
 			}
-			
-			System.out.println("Voici votre tableau trié dans l'ordre croissant :\n");
+			taille--;
 		}
 		
-		catch(ArrayIndexOutOfBoundsException e)
-		{
-			System.out.println("Une erreur est survenue au niveau des index du tableau...\n");
-			e.printStackTrace();
-			System.out.println("\nVoici votre tableau non-trié :\n");
-		}
-		
-		return tabNumToSort; //returns the sent tab which has been sorted
+		return tabNumToSort;
+		 
 	}
 	
 	public static char[] tabCharSort(char[] tabCharToSort)
 	{
-		try
+		boolean tab_en_ordre = false;
+		int taille = tabCharToSort.length;
+		while(!tab_en_ordre)
 		{
-			for(;tabCpt<tabCharToSort.length;tabCpt++)
+			tab_en_ordre = true;
+			for(int i=0 ; i < taille-1 ; i++)
 			{
-				if(tabCpt!=0 && (tabCpt<(tabCharToSort.length)))
-				{	
-					while((int)(tabCharToSort[tabCpt-j])<(int)(tabCharToSort[tabCpt-tmp]))
-					{
-						resCharTmp=tabCharToSort[tabCpt-tmp];
-						tabCharToSort[tabCpt-tmp]=tabCharToSort[tabCpt-j];
-						tabCharToSort[tabCpt-j]=resCharTmp;
-						System.out.println("tabcpt - j   : " + (tabCharToSort[tabCpt-j]));
-						System.out.println("tabcpt - tmp : " + (tabCharToSort[tabCpt-tmp]));
-						tmp++;
-						j++;
-						if((tabCpt - j) == 0)
-							break;
-					}
-					System.out.println("je sui pa la");
-					
-					j=0;
-					tmp=1;
+				if(tabCharToSort[i] > tabCharToSort[i+1])
+				{
+					char tmp = tabCharToSort[i];
+					tabCharToSort[i] = tabCharToSort[i+1];
+					tabCharToSort[i+1] = tmp;
+					tab_en_ordre = false;
 				}
 			}
-			
-			System.out.println("Voici votre tableau trié dans l'ordre croissant :\n");
+			taille--;
 		}
 		
-		catch(ArrayIndexOutOfBoundsException e)
-		{
-			System.out.println("Une erreur est survenue au niveau des index du tableau...\n");
-			e.printStackTrace();
-			System.out.println("\nVoici votre tableau non-trié :\n");
-		}
-		
-		return tabCharToSort; //returns the sent tab which has been sorted
+		return tabCharToSort;
 	}	
 
 	public static char[] tabSpecialChar(char[] tabCharToSort)
 	{
-		try
+		/*try
 		{
 			for(;tabCpt<tabCharToSort.length;tabCpt++)
 			{
@@ -119,17 +93,37 @@ public class Tri {
 				}
 			}
 			
-			System.out.println("Voici votre tableau trié dans l'ordre croissant :\n");
+			System.out.println("Voici votre tableau triï¿½ dans l'ordre croissant :\n");
 		}
 		
 		catch(ArrayIndexOutOfBoundsException e)
 		{
 			System.out.println("Une erreur est survenue au niveau des index du tableau...\n");
 			e.printStackTrace();
-			System.out.println("\nVoici votre tableau non-trié :\n");
+			System.out.println("\nVoici votre tableau non-triï¿½ :\n");
 		}
 		
-		return tabCharToSort; //returns the sent tab which has been sorted
+		return tabCharToSort; //returns the sent tab which has been sorted*/
+		
+		boolean tab_en_ordre = false;
+		int taille = tabCharToSort.length;
+		while(!tab_en_ordre)
+		{
+			tab_en_ordre = true;
+			for(int i=0 ; i < taille-1 ; i++)
+			{
+				if(tabCharToSort[i] > tabCharToSort[i+1])
+				{
+					char tmp = tabCharToSort[i];
+					tabCharToSort[i] = tabCharToSort[i+1];
+					tabCharToSort[i+1] = tmp;
+					tab_en_ordre = false;
+				}
+			}
+			taille--;
+		}
+		
+		return tabCharToSort;
 	}
 
 
