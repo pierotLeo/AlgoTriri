@@ -2,10 +2,6 @@ package org;
 
 public class Tri {
 	
-
-	
-	public Tri(){}
-
 	public static String[] convertIntToChar(int[] tabIntToSort)
 	{
 		String tabCharConverted[] = new String[tabIntToSort.length];
