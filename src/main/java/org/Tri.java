@@ -2,7 +2,7 @@ package org;
 
 public class Tri {
 	
-	public static String[] convertIntToChar(int[] tabIntToSort)
+	public static String[] convertIntToString(int[] tabIntToSort)
 	{
 		String tabCharConverted[] = new String[tabIntToSort.length];
 		
@@ -14,22 +14,22 @@ public class Tri {
 	
 	public static int[] tabNumSort(int[] tabNumToSort)
 	{
-		boolean tab_en_ordre = false;
-		int taille = tabNumToSort.length;
-		while(!tab_en_ordre)
+		boolean sortedTab = false;
+		int length = tabNumToSort.length;
+		while(!sortedTab)
 		{
-			tab_en_ordre = true;
-			for(int i=0 ; i < taille-1 ; i++)
+			sortedTab = true;
+			for(int i=0 ; i < length-1 ; i++)
 			{
 				if(tabNumToSort[i] > tabNumToSort[i+1])
 				{
 					int tmp = tabNumToSort[i];
 					tabNumToSort[i] = tabNumToSort[i+1];
 					tabNumToSort[i+1] = tmp;
-					tab_en_ordre = false;
+					sortedTab = false;
 				}
 			}
-			taille--;
+			length--;
 		}
 		
 		return tabNumToSort;
@@ -38,50 +38,26 @@ public class Tri {
 	
 	public static char[] tabCharSort(char[] tabCharToSort)
 	{
-		boolean tab_en_ordre = false;
-		int taille = tabCharToSort.length;
-		while(!tab_en_ordre)
+		boolean sortedTab = false;
+		int length = tabCharToSort.length;
+		while(!sortedTab)
 		{
-			tab_en_ordre = true;
-			for(int i=0 ; i < taille-1 ; i++)
+			sortedTab = true;
+			for(int i=0 ; i < length-1 ; i++)
 			{
 				if(tabCharToSort[i] > tabCharToSort[i+1])
 				{
 					char tmp = tabCharToSort[i];
 					tabCharToSort[i] = tabCharToSort[i+1];
 					tabCharToSort[i+1] = tmp;
-					tab_en_ordre = false;
+					sortedTab = false;
 				}
 			}
-			taille--;
+			length--;
 		}
 		
 		return tabCharToSort;
 	}	
-
-	public static char[] tabSpecialChar(char[] tabCharToSort)
-	{
-			
-		boolean tab_en_ordre = false;
-		int taille = tabCharToSort.length;
-		while(!tab_en_ordre)
-		{
-			tab_en_ordre = true;
-			for(int i=0 ; i < taille-1 ; i++)
-			{
-				if(tabCharToSort[i] > tabCharToSort[i+1])
-				{
-					char tmp = tabCharToSort[i];
-					tabCharToSort[i] = tabCharToSort[i+1];
-					tabCharToSort[i+1] = tmp;
-					tab_en_ordre = false;
-				}
-			}
-			taille--;
-		}
-		
-		return tabCharToSort;
-	}
 
 
 }

@@ -13,7 +13,7 @@ public class TriTest
 	{
 		int tabInt[]={1,2,1,3,5,4,2,6,7};
 		String expected_tabConvertedInt[]={"1","2","1","3","5","4","2","6","7"};
-		assertArrayEquals(expected_tabConvertedInt,Tri.convertIntToChar(tabInt));
+		assertArrayEquals(expected_tabConvertedInt,Tri.convertIntToString(tabInt));
 	}
 	
 	@Test
@@ -37,7 +37,7 @@ public class TriTest
 	{
 		char tabSpecialChar[]={'r','a','@','c','$','z','s','%','t','*'};
 		char expected_tabChar[]={'$','%','*','@','a','c','r','s','t','z'};
-		assertArrayEquals(expected_tabChar,Tri.tabSpecialChar(tabSpecialChar));
+		assertArrayEquals(expected_tabChar,Tri.tabCharSort(tabSpecialChar));
 	}
 	
 	/*public static void main(String[] args)
