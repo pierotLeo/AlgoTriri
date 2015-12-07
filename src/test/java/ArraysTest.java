@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.Arrays;
 
-public class SearchTest {
+public class ArraysTest {
 
 	@Test
 	public void testSearch() {
