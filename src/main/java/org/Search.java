@@ -1,6 +1,6 @@
 package org;
 
-public class Arrays
+public class Search
 {
 	private static int index_compt=0;
 
